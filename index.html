@@ -1,11 +1,232 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Keze Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keze Store</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#070707;
+color:white;
+}
+
+header{
+text-align:center;
+padding:40px 20px;
+}
+
+header h1{
+font-size:3rem;
+color:#00e5ff;
+text-shadow:0 0 10px #00e5ff,
+0 0 20px #00e5ff,
+0 0 40px #00e5ff;
+}
+
+.tagline{
+color:#cfcfcf;
+margin-top:10px;
+}
+
+.badge{
+display:inline-block;
+margin-top:15px;
+padding:8px 15px;
+border:1px solid #00e5ff;
+border-radius:20px;
+color:#00e5ff;
+box-shadow:0 0 10px #00e5ff;
+}
+
+.description{
+text-align:center;
+max-width:800px;
+margin:auto;
+padding:20px;
+color:#bdbdbd;
+}
+
+.store-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:#101010;
+border:1px solid #00e5ff;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+box-shadow:0 0 10px rgba(0,229,255,.2);
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px #00e5ff;
+}
+
+.image-box{
+height:160px;
+background:#1c1c1c;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#666;
+font-size:14px;
+}
+
+.info{
+padding:15px;
+}
+
+.item-name{
+font-size:18px;
+font-weight:bold;
+color:white;
+}
+
+.price{
+margin-top:8px;
+color:#00ff95;
+font-weight:bold;
+}
+
+footer{
+margin-top:40px;
+padding:30px;
+text-align:center;
+border-top:1px solid #222;
+}
+
+.contact-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:#00e5ff;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.contact-btn:hover{
+box-shadow:0 0 20px #00e5ff;
+}
+
+.section-title{
+text-align:center;
+font-size:2rem;
+color:#00e5ff;
+margin-top:20px;
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to Keze Shop</h1>
-    <p>Trusted seller ✅</p>
-    <p>Contact me to buy items.</p>
+
+<header>
+<h1>KEZE STORE</h1>
+<p class="tagline">Most Trusted & Reliable Store</p>
+<div class="badge">✓ Trusted Seller</div>
+</header>
+
+<p class="description">
+We sell items from different games. Check out our collection and find something you like.
+</p>
+
+<h2 class="section-title">Available Items</h2>
+
+<div class="store-grid">
+
+<div class="card">
+<div class="image-box">Item Image</div>
+<div class="info">
+<div class="item-name">Item Name</div>
+<div class="price">₹499</div>
+</div>
+</div>
+
+<div class="card">
+<div class="image-box">Item Image</div>
+<div class="info">
+<div class="item-name">Item Name</div>
+<div class="price">₹799</div>
+</div>
+</div>
+
+<div class="card">
+<div class="image-box">Item Image</div>
+<div class="info">
+<div class="item-name">Item Name</div>
+<div class="price">₹299</div>
+</div>
+</div>
+
+<div class="card">
+<div class="image-box">Item Image</div>
+<div class="info">
+<div class="item-name">Item Name</div>
+<div class="price">₹999</div>
+</div>
+</div>
+
+<div class="card">
+<div class="image-box">Item Image</div>
+<div class="info">
+<div class="item-name">Item Name</div>
+<div class="price">₹699</div>
+</div>
+</div>
+
+<div class="card">
+<div class="image-box">Item Image</div>
+<div class="info">
+<div class="item-name">Item Name</div>
+<div class="price">₹1299</div>
+</div>
+</div>
+
+<div class="card">
+<div class="image-box">Item Image</div>
+<div class="info">
+<div class="item-name">Item Name</div>
+<div class="price">₹399</div>
+</div>
+</div>
+
+<div class="card">
+<div class="image-box">Item Image</div>
+<div class="info">
+<div class="item-name">Item Name</div>
+<div class="price">₹899</div>
+</div>
+</div>
+
+<div class="card">
+<div class="image-box">Item Image</div>
+<div class="info">
+<div class="item-name">Item Name</div>
+<div class="price">₹1499</div>
+</div>
+</div>
+
+</div>
+
+<footer>
+<h2>Contact Me</h2>
+<p>Interested in buying? Contact me below.</p>
+<a class="contact-btn" href="#">Contact Seller</a>
+</footer>
+
 </body>
 </html>
