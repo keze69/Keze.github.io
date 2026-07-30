@@ -1,1 +1,0 @@
-function toggleGallery(){const g=document.getElementById('gallery');const a=document.getElementById('arrow');if(g.classList.contains('hidden')){g.classList.remove('hidden');a.textContent='▲';}else{g.classList.add('hidden');a.textContent='▼';}}
